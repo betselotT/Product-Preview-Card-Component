@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    background-color: hsl(30, 38%, 92%);
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.items{
+    display: flex;    
+}
+
+.img1{
+    width: 250px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.img2{
+    color: white;
+    
+}
+
+.writing{
+    background-color: hsl(0, 0%, 100%);
+    font-size: 14px;
+    padding: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.side{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 175px;
+}
+
+.para1{
+    margin-top: 15px;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 15px;
+    letter-spacing: 4.5px;
+}
+.para2{
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+    margin-bottom: 20px;
+    width: 200px;
+}
+
+.para3{
+    width: 240px;
+    line-height: 25px;
+}
+.para3, .para5{
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 20px;
+}
+
+.para4{
+    color: hsl(158, 36%, 37%);
+    margin-bottom: 20px;
+    font-family: 'Fraunces', serif;
+    font-size: 25px;
+}
+
+.para5{
+    text-decoration: line-through;
+}
+.button{
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    border: 1px white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    margin-left: 6px;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    border: 1px white;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .items{
+        display: block;
+    }
+    .img1{
+        width: 350px;
+        border-radius: 0px;
+        height: 250px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .para2{
+        width: 300px;
+    }
+    .para3{
+        width: 295px;
+    }
+    .writing{
+        border-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+}
